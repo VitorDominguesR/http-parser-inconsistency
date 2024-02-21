@@ -1,3 +1,4 @@
+# General
 /logs
 /.data
 .envy
@@ -6,3 +7,6 @@
 # node
 app/node_modules
 node_modules
+
+# python
+__pycache__
