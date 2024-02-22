@@ -1,0 +1,16 @@
+version: "3.0"
+
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx/springb.conf:/etc/nginx/conf.d/springb.template
+    ports:
+      - '8080:80'
+    command: 'bash -c "cat /etc/nginx/conf.d/springb.template > /etc/nginx/conf.d/default.conf && nginx -g ''daemon off;''"'
+  springboot:
+    build: 
+      context: ./
+      dockerfile: springapp.Dockerfile
+    ports:
+      - 3000:3000
