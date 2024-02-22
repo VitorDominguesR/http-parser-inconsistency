@@ -34,8 +34,10 @@ foo@bar:~$ sudo docker-compose up --build --force-recreate --remove-orphans
 |1.16.1|\x85, \xA0, \x1F, \x1E, \x1D, \x1C, \x0C, \x0B|
 
 # Spring Boot
+
 |Nginx Version|Spring Boot Bypass Characters|
-|1.22.0|;|\
+|---|---|
+|1.22.0|;|
 |1.21.6|;|
 |1.20.2|\x09, ;|
 |1.18.0|\x09, ;|
