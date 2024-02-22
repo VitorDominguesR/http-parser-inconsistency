@@ -15,7 +15,7 @@ foo@bar:~$ sudo docker-compose up --build --force-recreate --remove-orphans
 
 # Node.js
 
-|Nginx Version|Bypass Characters|
+|Nginx Version|Node Bypass Characters|
 |---|---|
 |1.22.0|\xA0|
 |1.21.6|\xA0|
@@ -25,7 +25,7 @@ foo@bar:~$ sudo docker-compose up --build --force-recreate --remove-orphans
 
 # Flask
 
-|Nginx Version|Bypass Characters|
+|Nginx Version|Flask Bypass Characters|
 |---|---|
 |1.22.0|\x85, \xA0|
 |1.21.6|\x85, \xA0|
@@ -33,3 +33,10 @@ foo@bar:~$ sudo docker-compose up --build --force-recreate --remove-orphans
 |1.18.0|\x85, \xA0, \x1F, \x1E, \x1D, \x1C, \x0C, \x0B|
 |1.16.1|\x85, \xA0, \x1F, \x1E, \x1D, \x1C, \x0C, \x0B|
 
+# Spring Boot
+|Nginx Version|Spring Boot Bypass Characters|
+|1.22.0|;|\
+|1.21.6|;|
+|1.20.2|\x09, ;|
+|1.18.0|\x09, ;|
+|1.16.1|\x09, ;|
