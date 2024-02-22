@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class HelloController {
-    @RequestMapping("/not-admin")
+    @RequestMapping("/")
     public String notAdmin() {
-        return "Hello World\n";
+        return "Hello World from SpringBoot\n";
     }
     @RequestMapping("/admin")
     public String index() {
-        return "<h1>ADMIN</h1>\n";
+        return "<h1>ADMIN Panel</h1>\n";
     }
     
 }
