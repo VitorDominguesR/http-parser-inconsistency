@@ -12,3 +12,24 @@ Example of running some of the applications
 foo@bar:~$ cd node
 foo@bar:~$ sudo docker-compose up --build --force-recreate --remove-orphans
 ```
+
+# Node.js
+
+|Nginx Version|Bypass Characters|
+|---|---|
+|1.22.0|\xA0|
+|1.21.6|\xA0|
+|1.20.2|\xA0, \x09, \x0C|
+|1.18.0|\xA0, \x09, \x0C|
+|1.16.1|\xA0, \x09, \x0C|
+
+# Flask
+
+|Nginx Version|Bypass Characters|
+|---|---|
+|1.22.0|\x85, \xA0|
+|1.21.6|\x85, \xA0|
+|1.20.2|\x85, \xA0, \x1F, \x1E, \x1D, \x1C, \x0C, \x0B|
+|1.18.0|\x85, \xA0, \x1F, \x1E, \x1D, \x1C, \x0C, \x0B|
+|1.16.1|\x85, \xA0, \x1F, \x1E, \x1D, \x1C, \x0C, \x0B|
+
